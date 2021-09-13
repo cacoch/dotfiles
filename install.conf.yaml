@@ -14,6 +14,10 @@
     ~/.vimrc:
       path: vimrc
       force: true
+    ~/.config/polybar/:
+      path: polybar/*
+      glob: true
+      force: true
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]

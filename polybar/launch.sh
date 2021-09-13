@@ -1,14 +1,15 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
+# Polybar launching script 
 
 # Terminate already running bar instances
-#killall -q i3bar
-killall -q polybar
+killall -w -q  -SIGKILL polybar
 
-# Wait until the processes have been shut down
-while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
-# Launch Polybar, using default config location ~/.config/polybar/config
-polybar main &
-polybar   -c $HOME/.config/polybar/config-example example &
+# Launch Polybar, 
+echo "---" | tee -a /tmp/polybar1.log /tmp/polybar2.log
+date | tee -a /tmp/polybar1.log /tmp/polybar2.log
+polybar main 2>&1 | tee -a /tmp/polybar1.log & disown 
+polybar   -c $HOME/.config/polybar/config-example example 2>&1 | tee -a /tmp/polybar2.log & disown 
 
 echo "Polybar launched..."
