@@ -14,5 +14,6 @@ if [[ $- != *i* ]] ; then
 	return
 fi
 
+PATH=$PATH:~/bin
 
-# Put your fun stuff here.
+alias cal='cal -m'
