@@ -76,7 +76,7 @@ date = %A, %B %d
 date-alt = %A, %B %d, %Y
 time-alt = %H:%M:%S
 
-format-prefix = " "
+;format-prefix = " "
 format-padding = 2
 format-underline = ${colors.menucol-orange}
 format-foreground = ${colors.menucol-orange}
@@ -147,21 +147,21 @@ format-foreground = ${colors.menucol-blue}
 
 [module/settings]
 type = custom/text
-content = 
+;content = 
 content-font = 7
 content-padding = 2
 click-left = sh ~/.config/i3/settings.sh
 
 [module/appfilemanager]
 type = custom/text
-content = 
+;content = 
 content-font = 7
 content-padding = 2
 click-left = "nemo > /dev/null 2>&1 &"
 
 [module/xkillapp]
 type = custom/text
-content = 
+;content = 
 content-font = 7
 content-padding = 2
 click-left = sleep 0.5 && xkill > /dev/null 2>&1 &
@@ -171,12 +171,12 @@ click-left = sleep 0.5 && xkill > /dev/null 2>&1 &
 [module/wifi]
 type = internal/network
 interface = wlp3s0
-format-connected =  <ramp-signal>
+;format-connected =  <ramp-signal>
 format-connected-padding = 2
 format-connected-foreground = ${colors.menucol-green}
 format-connected-underline = ${colors.menucol-green}
 
-format-disconnected = " "
+;format-disconnected = " "
 format-disconnected-font = 7
 format-disconnected-padding = 2
 format-disconnected-foreground = ${colors.menucol-yellow}
@@ -202,15 +202,15 @@ format-volume-underline = ${colors.menucol-sealine}
 label-volume = %percentage%
 label-volume-font = 3
 
-label-muted =  (%percentage%)
+;label-muted =  (%percentage%)
 label-muted-font = 3
 label-muted-padding = 2
 label-muted-foreground = ${colors.gray}
 label-muted-underline = ${colors.gray}
 
-ramp-volume-0 = 
-ramp-volume-1 = 
-ramp-volume-2 = 
+;ramp-volume-0 = 
+;ramp-volume-1 = 
+;ramp-volume-2 = 
 ramp-volume-font = 7
 ramp-volume-foreground = ${colors.menucol-sealine}
 
@@ -220,7 +220,7 @@ ramp-volume-foreground = ${colors.menucol-sealine}
 type = internal/xbacklight
 format = <label>
 format-padding = 2
-format-prefix = 
+;format-prefix = 
 format-underline = ${colors.menucol-yellow}
 format-prefix-foreground = ${colors.menucol-yellow}
 
@@ -235,7 +235,7 @@ blacklist-0 = num lock
 blacklist-1 = caps lock
 blacklist-2 = scroll lock
 
-format-prefix = " "
+;format-prefix = " "
 format-underline = ${colors.menucol-blue}
 format-foreground = ${colors.menucol-blue}
 format-padding = 2
@@ -252,12 +252,12 @@ format = <label-indicator>
 format-underline = ${colors.menucol-green}
 format-padding = 2
 
-label-indicator-on-capslock = "%{F#77BD8B} "
-label-indicator-off-capslock = "%{F#333} "
-label-indicator-on-numlock = "%{F#77BD8B} "
-label-indicator-off-numlock = "%{F#333} "
-label-indicator-on-scrolllock = "%{F#77BD8B}"
-label-indicator-off-scrolllock = "%{F#333}"
+;label-indicator-on-capslock = "%{F#77BD8B} "
+;label-indicator-off-capslock = "%{F#333} "
+;label-indicator-on-numlock = "%{F#77BD8B} "
+;label-indicator-off-numlock = "%{F#333} "
+;label-indicator-on-scrolllock = "%{F#77BD8B}"
+;label-indicator-off-scrolllock = "%{F#333}"
 
 
 ;Keyboard lock states
@@ -277,7 +277,7 @@ label-foreground = ${colors.menucol-green}
 [module/powermenu]
 type = custom/text
 
-content = ⏻
+;content = ⏻
 content-font = 7
 content-padding = 2
 content-foreground = ${colors.menucol-lightblue}
@@ -306,26 +306,26 @@ label-charging-font = 3
 label-discharging = %percentage%
 label-discharging-font = 3
 
-animation-charging-0 = 
-animation-charging-1 = 
-animation-charging-2 = 
-animation-charging-3 = 
-animation-charging-4 = 
+;animation-charging-0 = 
+;animation-charging-1 = 
+;animation-charging-2 = 
+;animation-charging-3 = 
+;animation-charging-4 = 
 animation-charging-framerate = 750
 animation-charging-foreground = ${colors.menucol-orange}
 
-animation-discharging-0 = 
-animation-discharging-1 = 
-animation-discharging-2 = 
-animation-discharging-3 = 
-animation-discharging-4 = 
-animation-discharging-5 = 
-animation-discharging-6 = 
-animation-discharging-7 = 
-animation-discharging-8 = 
-animation-discharging-9 = 
-animation-discharging-framerate = 750
-animation-discharging-foreground = ${colors.menucol-orange}
+;animation-discharging-0 = 
+;animation-discharging-1 = 
+;animation-discharging-2 = 
+;animation-discharging-3 = 
+;animation-discharging-4 = 
+;animation-discharging-5 = 
+;animation-discharging-6 = 
+;animation-discharging-7 = 
+;animation-discharging-8 = 
+;animation-discharging-9 = 
+;animation-discharging-framerate = 750
+;animation-discharging-foreground = ${colors.menucol-orange}
 
 
 [module/cpu]
@@ -335,7 +335,7 @@ format = <label>
 format-padding = 2
 format-underline = ${colors.menucol-red}
 
-format-prefix = 
+;format-prefix = 
 format-prefix-foreground = ${colors.menucol-red}
 
 label = " %percentage%"
@@ -349,7 +349,7 @@ format = <label>
 format-padding = 2
 format-underline = ${colors.menucol-purple}
 
-format-prefix = 
+;format-prefix = 
 format-prefix-foreground = ${colors.menucol-purple}
 
 label = " %gb_used%"
@@ -363,7 +363,7 @@ format = <label>
 format-padding = 2
 format-underline = ${colors.menucol-pink}
 
-format-prefix = 
+;format-prefix = 
 format-prefix-foreground = ${colors.menucol-pink}
 
 label = " %gb_swap_used%"
@@ -384,11 +384,11 @@ label-font = 3
 label-warn = "%temperature-c% "
 label-warn-font = 3
 
-ramp-0 = 
-ramp-1 = 
-ramp-2 = 
-ramp-3 = 
-ramp-4 = 
+;ramp-0 = 
+;ramp-1 = 
+;ramp-2 = 
+;ramp-3 = 
+;ramp-4 = 
 ramp-font = 7
 ramp-foreground = ${colors.menucol-deepblue}
 

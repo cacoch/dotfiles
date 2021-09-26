@@ -17,3 +17,15 @@ fi
 PATH=$PATH:~/bin
 
 alias cal='cal -m'
+# when terminal went crazy
+alias cls='echo -e "\033c" ; stty sane; setterm -reset; reset; tput reset; clear'
+alias cp='cp -i'
+
+# mpv https://www.youtube.com/watch?v=ksmojX1VsT8
+
+
+
+# starting X with:  startx /usr/bin/i3 I get the following error message: 
+# (EE) xf86OpenConsole: Cannot open virtual console 7 (Permission denied)
+# Solution : startx /usr/bin/i3 -- vt1
+# where 1 is number terminal where I'm logged, if not 1, adjust to command 

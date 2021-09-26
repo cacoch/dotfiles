@@ -35,6 +35,7 @@ set background=dark
 " Hide toolbar in gvim 
 if has("gui_running")
    set guioptions -=T
+   set guifont=FantasqueSansMono\ Nerd\ Font\ Mono\ 14 
 endif
 
 
